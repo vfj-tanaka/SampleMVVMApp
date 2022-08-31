@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		FCE320D228BEFF2E0059F159 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE320D128BEFF2E0059F159 /* AppDelegate.swift */; };
 		FCE320D428BEFF2E0059F159 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE320D328BEFF2E0059F159 /* SceneDelegate.swift */; };
-		FCE320D628BEFF2E0059F159 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE320D528BEFF2E0059F159 /* ViewController.swift */; };
-		FCE320D928BEFF2E0059F159 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCE320D728BEFF2E0059F159 /* Main.storyboard */; };
 		FCE320DB28BEFF320059F159 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCE320DA28BEFF320059F159 /* Assets.xcassets */; };
 		FCE320DE28BEFF320059F159 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCE320DC28BEFF320059F159 /* LaunchScreen.storyboard */; };
 		FCE320E928BEFF330059F159 /* SampleMVVMAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE320E828BEFF330059F159 /* SampleMVVMAppTests.swift */; };
@@ -24,6 +22,12 @@
 		FCE3210F28BF08B90059F159 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = FCE3210E28BF08B90059F159 /* FirebaseFirestore */; };
 		FCE3211128BF08B90059F159 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FCE3211028BF08B90059F159 /* FirebaseFirestoreSwift */; };
 		FCE3211328BF08B90059F159 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = FCE3211228BF08B90059F159 /* FirebaseStorage */; };
+		FCE3211928BF0A3D0059F159 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE3211828BF0A3D0059F159 /* SignUpViewController.swift */; };
+		FCE3211B28BF0A520059F159 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCE3211A28BF0A520059F159 /* SignUp.storyboard */; };
+		FCE3211D28BF38C90059F159 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE3211C28BF38C90059F159 /* SignUpViewModel.swift */; };
+		FCE3211F28BF392F0059F159 /* Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE3211E28BF392F0059F159 /* Firebase.swift */; };
+		FCE3212128BF39690059F159 /* ValidationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE3212028BF39690059F159 /* ValidationModel.swift */; };
+		FCE3212328BF3B6C0059F159 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FCE3212228BF3B6B0059F159 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,8 +51,6 @@
 		FCE320CE28BEFF2E0059F159 /* SampleMVVMApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleMVVMApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCE320D128BEFF2E0059F159 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCE320D328BEFF2E0059F159 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FCE320D528BEFF2E0059F159 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FCE320D828BEFF2E0059F159 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FCE320DA28BEFF320059F159 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCE320DD28BEFF320059F159 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FCE320DF28BEFF320059F159 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -57,6 +59,12 @@
 		FCE320EE28BEFF330059F159 /* SampleMVVMAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleMVVMAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCE320F228BEFF330059F159 /* SampleMVVMAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleMVVMAppUITests.swift; sourceTree = "<group>"; };
 		FCE320F428BEFF330059F159 /* SampleMVVMAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleMVVMAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FCE3211828BF0A3D0059F159 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		FCE3211A28BF0A520059F159 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
+		FCE3211C28BF38C90059F159 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		FCE3211E28BF392F0059F159 /* Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firebase.swift; sourceTree = "<group>"; };
+		FCE3212028BF39690059F159 /* ValidationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationModel.swift; sourceTree = "<group>"; };
+		FCE3212228BF3B6B0059F159 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,11 +125,14 @@
 			children = (
 				FCE320D128BEFF2E0059F159 /* AppDelegate.swift */,
 				FCE320D328BEFF2E0059F159 /* SceneDelegate.swift */,
-				FCE320D528BEFF2E0059F159 /* ViewController.swift */,
-				FCE320D728BEFF2E0059F159 /* Main.storyboard */,
+				FCE3211728BF0A1D0059F159 /* Utility */,
+				FCE3211628BF0A110059F159 /* Model */,
+				FCE3211528BF0A030059F159 /* View */,
+				FCE3211428BF09F90059F159 /* ViewModel */,
 				FCE320DA28BEFF320059F159 /* Assets.xcassets */,
 				FCE320DC28BEFF320059F159 /* LaunchScreen.storyboard */,
 				FCE320DF28BEFF320059F159 /* Info.plist */,
+				FCE3212228BF3B6B0059F159 /* GoogleService-Info.plist */,
 			);
 			path = SampleMVVMApp;
 			sourceTree = "<group>";
@@ -141,6 +152,39 @@
 				FCE320F428BEFF330059F159 /* SampleMVVMAppUITestsLaunchTests.swift */,
 			);
 			path = SampleMVVMAppUITests;
+			sourceTree = "<group>";
+		};
+		FCE3211428BF09F90059F159 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FCE3211C28BF38C90059F159 /* SignUpViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FCE3211528BF0A030059F159 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FCE3211A28BF0A520059F159 /* SignUp.storyboard */,
+				FCE3211828BF0A3D0059F159 /* SignUpViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FCE3211628BF0A110059F159 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FCE3212028BF39690059F159 /* ValidationModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FCE3211728BF0A1D0059F159 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				FCE3211E28BF392F0059F159 /* Firebase.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,8 +307,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCE320DE28BEFF320059F159 /* LaunchScreen.storyboard in Resources */,
+				FCE3212328BF3B6C0059F159 /* GoogleService-Info.plist in Resources */,
 				FCE320DB28BEFF320059F159 /* Assets.xcassets in Resources */,
-				FCE320D928BEFF2E0059F159 /* Main.storyboard in Resources */,
+				FCE3211B28BF0A520059F159 /* SignUp.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,8 +334,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCE320D628BEFF2E0059F159 /* ViewController.swift in Sources */,
+				FCE3212128BF39690059F159 /* ValidationModel.swift in Sources */,
+				FCE3211F28BF392F0059F159 /* Firebase.swift in Sources */,
+				FCE3211928BF0A3D0059F159 /* SignUpViewController.swift in Sources */,
 				FCE320D228BEFF2E0059F159 /* AppDelegate.swift in Sources */,
+				FCE3211D28BF38C90059F159 /* SignUpViewModel.swift in Sources */,
 				FCE320D428BEFF2E0059F159 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,14 +376,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FCE320D728BEFF2E0059F159 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FCE320D828BEFF2E0059F159 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FCE320DC28BEFF320059F159 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -473,7 +513,7 @@
 				INFOPLIST_FILE = SampleMVVMApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -485,7 +525,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -501,7 +541,7 @@
 				INFOPLIST_FILE = SampleMVVMApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -513,7 +553,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
