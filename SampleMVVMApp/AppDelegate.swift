@@ -6,14 +6,24 @@
 //
 
 import UIKit
+import Firebase
+import IQKeyboardManagerSwift
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        FirebaseApp.configure()
+        //キーボードを上げる
+        IQKeyboardManager.shared.enable = true
+        //キーボードの上の余分なタブを消す
+        IQKeyboardManager.shared.enableAutoToolbar = false
+        //キーボード外をタップした時に下げる
+        IQKeyboardManager.shared.shouldResignOnTouchOutside = true
+        //returnキーにて閉じる
+        IQKeyboardManager.shared.resignFirstResponder()
+        
         return true
     }
 
