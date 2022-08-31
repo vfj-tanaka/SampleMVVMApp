@@ -16,6 +16,14 @@
 		FCE320E928BEFF330059F159 /* SampleMVVMAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE320E828BEFF330059F159 /* SampleMVVMAppTests.swift */; };
 		FCE320F328BEFF330059F159 /* SampleMVVMAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE320F228BEFF330059F159 /* SampleMVVMAppUITests.swift */; };
 		FCE320F528BEFF330059F159 /* SampleMVVMAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE320F428BEFF330059F159 /* SampleMVVMAppUITestsLaunchTests.swift */; };
+		FCE3210328BF075C0059F159 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = FCE3210228BF075C0059F159 /* RxCocoa */; };
+		FCE3210528BF075C0059F159 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = FCE3210428BF075C0059F159 /* RxRelay */; };
+		FCE3210728BF075C0059F159 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FCE3210628BF075C0059F159 /* RxSwift */; };
+		FCE3210A28BF07D50059F159 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FCE3210928BF07D50059F159 /* IQKeyboardManagerSwift */; };
+		FCE3210D28BF08B90059F159 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = FCE3210C28BF08B90059F159 /* FirebaseAuth */; };
+		FCE3210F28BF08B90059F159 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = FCE3210E28BF08B90059F159 /* FirebaseFirestore */; };
+		FCE3211128BF08B90059F159 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FCE3211028BF08B90059F159 /* FirebaseFirestoreSwift */; };
+		FCE3211328BF08B90059F159 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = FCE3211228BF08B90059F159 /* FirebaseStorage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +64,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCE3210728BF075C0059F159 /* RxSwift in Frameworks */,
+				FCE3210D28BF08B90059F159 /* FirebaseAuth in Frameworks */,
+				FCE3210A28BF07D50059F159 /* IQKeyboardManagerSwift in Frameworks */,
+				FCE3211128BF08B90059F159 /* FirebaseFirestoreSwift in Frameworks */,
+				FCE3210528BF075C0059F159 /* RxRelay in Frameworks */,
+				FCE3211328BF08B90059F159 /* FirebaseStorage in Frameworks */,
+				FCE3210328BF075C0059F159 /* RxCocoa in Frameworks */,
+				FCE3210F28BF08B90059F159 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +159,16 @@
 			dependencies = (
 			);
 			name = SampleMVVMApp;
+			packageProductDependencies = (
+				FCE3210228BF075C0059F159 /* RxCocoa */,
+				FCE3210428BF075C0059F159 /* RxRelay */,
+				FCE3210628BF075C0059F159 /* RxSwift */,
+				FCE3210928BF07D50059F159 /* IQKeyboardManagerSwift */,
+				FCE3210C28BF08B90059F159 /* FirebaseAuth */,
+				FCE3210E28BF08B90059F159 /* FirebaseFirestore */,
+				FCE3211028BF08B90059F159 /* FirebaseFirestoreSwift */,
+				FCE3211228BF08B90059F159 /* FirebaseStorage */,
+			);
 			productName = SampleMVVMApp;
 			productReference = FCE320CE28BEFF2E0059F159 /* SampleMVVMApp.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +241,11 @@
 				Base,
 			);
 			mainGroup = FCE320C528BEFF2E0059F159;
+			packageReferences = (
+				FCE3210128BF075C0059F159 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				FCE3210828BF07D50059F159 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				FCE3210B28BF08B90059F159 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = FCE320CF28BEFF2E0059F159 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -602,6 +633,76 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FCE3210128BF075C0059F159 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.0;
+			};
+		};
+		FCE3210828BF07D50059F159 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.0;
+			};
+		};
+		FCE3210B28BF08B90059F159 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FCE3210228BF075C0059F159 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FCE3210128BF075C0059F159 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		FCE3210428BF075C0059F159 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FCE3210128BF075C0059F159 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		FCE3210628BF075C0059F159 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FCE3210128BF075C0059F159 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		FCE3210928BF07D50059F159 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FCE3210828BF07D50059F159 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+		FCE3210C28BF08B90059F159 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FCE3210B28BF08B90059F159 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		FCE3210E28BF08B90059F159 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FCE3210B28BF08B90059F159 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		FCE3211028BF08B90059F159 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FCE3210B28BF08B90059F159 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		FCE3211228BF08B90059F159 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FCE3210B28BF08B90059F159 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FCE320C628BEFF2E0059F159 /* Project object */;
 }
