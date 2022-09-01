@@ -28,6 +28,7 @@
 		FCE3211F28BF392F0059F159 /* Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE3211E28BF392F0059F159 /* Firebase.swift */; };
 		FCE3212128BF39690059F159 /* ValidationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE3212028BF39690059F159 /* ValidationModel.swift */; };
 		FCE3212328BF3B6C0059F159 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FCE3212228BF3B6B0059F159 /* GoogleService-Info.plist */; };
+		FCE3212528C0AF340059F159 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE3212428C0AF340059F159 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		FCE3211E28BF392F0059F159 /* Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firebase.swift; sourceTree = "<group>"; };
 		FCE3212028BF39690059F159 /* ValidationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationModel.swift; sourceTree = "<group>"; };
 		FCE3212228BF3B6B0059F159 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FCE3212428C0AF340059F159 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,10 +127,10 @@
 			children = (
 				FCE320D128BEFF2E0059F159 /* AppDelegate.swift */,
 				FCE320D328BEFF2E0059F159 /* SceneDelegate.swift */,
-				FCE3211728BF0A1D0059F159 /* Utility */,
 				FCE3211628BF0A110059F159 /* Model */,
 				FCE3211528BF0A030059F159 /* View */,
 				FCE3211428BF09F90059F159 /* ViewModel */,
+				FCE3211728BF0A1D0059F159 /* Utility */,
 				FCE320DA28BEFF320059F159 /* Assets.xcassets */,
 				FCE320DC28BEFF320059F159 /* LaunchScreen.storyboard */,
 				FCE320DF28BEFF320059F159 /* Info.plist */,
@@ -175,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				FCE3212028BF39690059F159 /* ValidationModel.swift */,
+				FCE3212428C0AF340059F159 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 				FCE320D228BEFF2E0059F159 /* AppDelegate.swift in Sources */,
 				FCE3211D28BF38C90059F159 /* SignUpViewModel.swift in Sources */,
 				FCE320D428BEFF2E0059F159 /* SceneDelegate.swift in Sources */,
+				FCE3212528C0AF340059F159 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
