@@ -21,6 +21,7 @@ final class SignUpViewController: UIViewController {
     
     private var viewModel: SignUpViewModel!
     private let disposeBag = DisposeBag()
+    private var registerTrigger = PublishSubject<Void>()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,5 +31,33 @@ final class SignUpViewController: UIViewController {
     
     private func bind() {
         
+        self.viewModel = SignUpViewModel()
+        let input = SignUpViewModel.Input(
+            userNameTextDriver: userNameTextField.rx.text.orEmpty.asDriver(),
+            mailTextDriver: mailTextField.rx.text.orEmpty.asDriver(),
+            passwordTextDriver: passwordTextField.rx.text.orEmpty.asDriver(),
+            confirmTextDriver: confirmTextField.rx.text.orEmpty.asDriver(),
+            registerTrigger: registerTrigger
+        )
+        
+        let output = self.viewModel.transform(input: input)
+        output.validationResult.drive { validationResult in
+            self.registerButton.isEnabled = validationResult.isValidated
+            self.statusLabel.text = validationResult.text
+            self.statusLabel.textColor = validationResult.color
+        }
+        .disposed(by: disposeBag)
+        
+        output.registerResult.drive { isSuccess, messsage in
+            if !isSuccess {
+                print("register fail")
+            }
+        }.disposed(by: disposeBag)
+        
+        registerButton.rx.tap.asDriver().drive(onNext: { [weak self] _ in
+            self?.registerTrigger.onNext(())
+        })
+        .disposed(by: disposeBag)
     }
+    
 }
