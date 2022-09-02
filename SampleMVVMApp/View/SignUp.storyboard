@@ -72,7 +72,7 @@
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="６文字以上の半角英数字" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ozj-t7-Pf4">
                                                         <rect key="frame" x="0.0" y="23" width="354" height="34"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                     </textField>
                                                 </subviews>
                                             </stackView>
