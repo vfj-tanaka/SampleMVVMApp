@@ -36,6 +36,14 @@ enum ValidationResult {
         case .blankError, .confirmError: return .red
         }
     }
+    
+    var border: CGColor {
+        
+        switch self {
+        case .ok: return .init(genericCMYKCyan: 0, magenta: 0, yellow: 0, black: 1, alpha: 1)
+        case .blankError, .confirmError: return .init(genericCMYKCyan: 0, magenta: 0, yellow: 0, black: 1, alpha: 0.3)
+        }
+    }
 }
 
 final class ValidationModel {

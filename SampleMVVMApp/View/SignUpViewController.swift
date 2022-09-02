@@ -26,6 +26,8 @@ final class SignUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        registerButton.layer.borderWidth = 1
+        registerButton.layer.cornerRadius = 5
         bind()
     }
     
@@ -43,6 +45,7 @@ final class SignUpViewController: UIViewController {
         let output = self.viewModel.transform(input: input)
         output.validationResult.drive { validationResult in
             self.registerButton.isEnabled = validationResult.isValidated
+            self.registerButton.layer.borderColor = validationResult.border
             self.statusLabel.text = validationResult.text
             self.statusLabel.textColor = validationResult.color
         }
@@ -54,10 +57,14 @@ final class SignUpViewController: UIViewController {
             }
         }.disposed(by: disposeBag)
         
-        registerButton.rx.tap.asDriver().drive(onNext: { [weak self] _ in
+        registerButton.rx.tap.asDriver().drive(onNext: { [weak self] in
             self?.registerTrigger.onNext(())
         })
         .disposed(by: disposeBag)
+        
+        goToSignInButton.rx.tap.asDriver().drive(onNext: { _ in
+            
+        })
+        .disposed(by: disposeBag)
     }
-    
 }
