@@ -9,7 +9,7 @@ import UIKit
 
 final class AppCoordinator: Coordinator {
     
-    let window: UIWindow
+    private let window: UIWindow
     
     init(window: UIWindow) {
         

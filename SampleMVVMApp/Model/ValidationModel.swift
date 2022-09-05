@@ -37,11 +37,25 @@ enum ValidationResult {
         }
     }
     
-    var border: CGColor {
+    var borderColor: CGColor {
         
         switch self {
-        case .ok: return .init(genericCMYKCyan: 0, magenta: 0, yellow: 0, black: 1, alpha: 1)
-        case .blankError, .confirmError: return .init(genericCMYKCyan: 0, magenta: 0, yellow: 0, black: 1, alpha: 0.3)
+        case .ok: return UIColor.black.cgColor
+        case .blankError, .confirmError: return UIColor.lightGray.cgColor
+        }
+    }
+    
+    var width: CGFloat {
+        
+        switch self {
+        case .ok, .blankError, .confirmError: return 1
+        }
+    }
+    
+    var corner: CGFloat {
+        
+        switch self {
+        case .ok, .blankError, .confirmError: return 5
         }
     }
 }
