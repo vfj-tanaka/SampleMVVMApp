@@ -88,7 +88,7 @@ final class SignUpViewModel {
                     print("Authの登録に失敗しました")
                     return
                 }
-                
+                print(uid)
                 Firebase.registerUser(userName: userName, mail: mail, uid: uid) { err in
                     
                     if err != nil {
