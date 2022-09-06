@@ -22,7 +22,6 @@ final class SignUpViewModel {
     struct Output {
         let validationResult: Driver<ValidationResult>
         let registerResult: Driver<(isSuccessed: Bool, message: String)>
-
     }
     
     private let disposeBag = DisposeBag()
@@ -83,12 +82,11 @@ final class SignUpViewModel {
                 switch result {
                 case .success(let uidString):
                     uid = uidString
-                    print("Authの登録に成功しました")
                 case .failure:
                     print("Authの登録に失敗しました")
                     return
                 }
-                print(uid)
+                
                 Firebase.registerUser(userName: userName, mail: mail, uid: uid) { err in
                     
                     if err != nil {
@@ -106,6 +104,7 @@ final class SignUpViewModel {
                 }
             }
         }
+        print("登録に成功しました")
         return (isSuccessed: true, message: "")
     }
 }

@@ -9,14 +9,18 @@ import UIKit
 
 final class HomeTableViewCell: UITableViewCell {
     
-    @IBOutlet private weak var sampleImageView: UIImageView!
+    @IBOutlet private weak var postImageView: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        postImageView.layer.cornerRadius = 10
+        postImageView.layer.borderWidth = 1
+        postImageView.layer.borderColor = UIColor.lightGray.cgColor
     }
     
     override func prepareForReuse() {
-        sampleImageView.image = nil
+        postImageView.image = nil
     }
     
     func confirure(image: String) {
