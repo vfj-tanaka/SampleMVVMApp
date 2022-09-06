@@ -9,15 +9,15 @@ import UIKit
 
 final class SignUpCoordinator: Coordinator {
     
-    private let navigator: UINavigationController
-    private var nextCoordinator: Coordinator?
+    private var signInVC: SignInViewController?
     
-    init(navigator: UINavigationController) {
-        self.navigator = navigator
+    init(signInVC: SignInViewController) {
+        self.signInVC = signInVC
     }
     
     func start() {
-        let vc = SignUpViewController()
         
+        let signUpVC = UIStoryboard(name: StoryboardName.signUp.rawValue, bundle: nil).instantiateInitialViewController() as! HomeViewController
+        signInVC?.navigationController?.pushViewController(signUpVC, animated: true)
     }
 }

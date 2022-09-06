@@ -39,6 +39,10 @@
 		FCE3213728C584BD0059F159 /* SignUpCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE3213628C584BD0059F159 /* SignUpCoordinator.swift */; };
 		FCE3213A28C59C000059F159 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE3213828C59C000059F159 /* HomeTableViewCell.swift */; };
 		FCE3213B28C59C000059F159 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCE3213928C59C000059F159 /* HomeTableViewCell.xib */; };
+		FCE3213D28C5E4630059F159 /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCE3213C28C5E4630059F159 /* SignIn.storyboard */; };
+		FCE3213F28C5E4770059F159 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE3213E28C5E4770059F159 /* SignInViewController.swift */; };
+		FCE3214128C5E4890059F159 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE3214028C5E4890059F159 /* SignInViewModel.swift */; };
+		FCE3214328C5E4A60059F159 /* SignInCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE3214228C5E4A60059F159 /* SignInCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +91,10 @@
 		FCE3213628C584BD0059F159 /* SignUpCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpCoordinator.swift; sourceTree = "<group>"; };
 		FCE3213828C59C000059F159 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		FCE3213928C59C000059F159 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		FCE3213C28C5E4630059F159 /* SignIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
+		FCE3213E28C5E4770059F159 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		FCE3214028C5E4890059F159 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		FCE3214228C5E4A60059F159 /* SignInCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				FCE3211C28BF38C90059F159 /* SignUpViewModel.swift */,
+				FCE3214028C5E4890059F159 /* SignInViewModel.swift */,
 				FCE3213428C583950059F159 /* HomeViewModel.swift */,
 			);
 			path = ViewModel;
@@ -191,6 +200,8 @@
 			children = (
 				FCE3211A28BF0A520059F159 /* SignUp.storyboard */,
 				FCE3211828BF0A3D0059F159 /* SignUpViewController.swift */,
+				FCE3213C28C5E4630059F159 /* SignIn.storyboard */,
+				FCE3213E28C5E4770059F159 /* SignInViewController.swift */,
 				FCE3212928C19A110059F159 /* Home.storyboard */,
 				FCE3212728C19A020059F159 /* HomeViewController.swift */,
 				FCE3213928C59C000059F159 /* HomeTableViewCell.xib */,
@@ -223,6 +234,7 @@
 				FCE3212C28C1D68C0059F159 /* AppCoordinator.swift */,
 				FCE3212E28C1D6CC0059F159 /* Coordinator.swift */,
 				FCE3213628C584BD0059F159 /* SignUpCoordinator.swift */,
+				FCE3214228C5E4A60059F159 /* SignInCoordinator.swift */,
 				FCE3213028C1D6F50059F159 /* HomeCoordinator.swift */,
 			);
 			path = Coordinator;
@@ -352,6 +364,7 @@
 				FCE3212328BF3B6C0059F159 /* GoogleService-Info.plist in Resources */,
 				FCE320DB28BEFF320059F159 /* Assets.xcassets in Resources */,
 				FCE3213B28C59C000059F159 /* HomeTableViewCell.xib in Resources */,
+				FCE3213D28C5E4630059F159 /* SignIn.storyboard in Resources */,
 				FCE3211B28BF0A520059F159 /* SignUp.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -381,14 +394,17 @@
 				FCE3211F28BF392F0059F159 /* Firebase.swift in Sources */,
 				FCE3212F28C1D6CC0059F159 /* Coordinator.swift in Sources */,
 				FCE3211928BF0A3D0059F159 /* SignUpViewController.swift in Sources */,
+				FCE3214328C5E4A60059F159 /* SignInCoordinator.swift in Sources */,
 				FCE3212828C19A020059F159 /* HomeViewController.swift in Sources */,
 				FCE320D228BEFF2E0059F159 /* AppDelegate.swift in Sources */,
 				FCE3213A28C59C000059F159 /* HomeTableViewCell.swift in Sources */,
 				FCE3211D28BF38C90059F159 /* SignUpViewModel.swift in Sources */,
 				FCE3212D28C1D68C0059F159 /* AppCoordinator.swift in Sources */,
+				FCE3214128C5E4890059F159 /* SignInViewModel.swift in Sources */,
 				FCE3213728C584BD0059F159 /* SignUpCoordinator.swift in Sources */,
 				FCE3213528C583950059F159 /* HomeViewModel.swift in Sources */,
 				FCE320D428BEFF2E0059F159 /* SceneDelegate.swift in Sources */,
+				FCE3213F28C5E4770059F159 /* SignInViewController.swift in Sources */,
 				FCE3213328C1D7190059F159 /* StoryboardName.swift in Sources */,
 				FCE3212528C0AF340059F159 /* User.swift in Sources */,
 				FCE3213128C1D6F50059F159 /* HomeCoordinator.swift in Sources */,
